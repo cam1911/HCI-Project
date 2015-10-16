@@ -11,8 +11,14 @@ nav {
   padding-top: 15px;
 }
 
+.navbar-custom {
+  background-color: #e74c3c;
+  border-radius: 0px;
+}
+
 .navbar {
   margin-bottom: 0px;
+  background-color: #4d534c;
 }
 
 .navbar-brand {
@@ -33,6 +39,10 @@ nav {
   top: 4px;
 }
 
+.form-group input {
+  border-radius: 0;
+}
+
 .navbar-header {
   margin-right: 15px;
 }
@@ -45,6 +55,7 @@ nav {
 .navbar-right {
   padding-right: 15px;
   text-align: center;
+  color: #fff;
 }
 
 .navbar-right > li {
@@ -56,6 +67,7 @@ nav {
   padding: 0;
   padding-top: 5px;
   display: block;
+  color: #fff;
 }
 
 #nav-bottom-row {
@@ -69,6 +81,10 @@ nav {
 #nav-bottom-row li {
   margin-right: 15px;
   text-align: center;
+}
+
+#nav-bottom-row li span, #nav-bottom-row li a {
+  color: #fff;
 }
 
 .jumbotron {
