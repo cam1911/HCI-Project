@@ -1,3 +1,3 @@
-/*
-* Main js file (Later split into separate files)
-*/
+$(document).ready(function(){
+  
+});

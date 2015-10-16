@@ -1,3 +1,52 @@
-/*
-* Main CSS file
-*/
+@font-face {
+    font-family: futura;
+    src: url(../assets/fonts/futura.ttf);
+}
+
+body {
+  font-family: futura;
+}
+
+nav {
+  padding-top: 15px;
+}
+
+#transparent-nav {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  padding: 0px;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-right: 70px;
+}
+
+.navbar-form .form-control {
+  width: 374px;
+}
+
+.navbar-header {
+  margin-right: 15px;
+}
+
+.navbar-right button {
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
+.navbar-right {
+  padding-right: 15px;
+}
+
+#nav-bottom-row {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-bottom-row li {
+  display: inline;
+  margin-right: 15px;
+  text-align: center;
+}
