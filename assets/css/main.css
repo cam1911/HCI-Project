@@ -72,7 +72,11 @@ nav {
 }
 
 .jumbotron {
-  background-image: url(../images/featured-image.jpeg);
+  background: url(../images/featured-image.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #fff;
   text-align: center;
   font-size: 28px;
