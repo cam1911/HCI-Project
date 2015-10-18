@@ -33,4 +33,6 @@
 
 .dropdown-toggle {
 	border: none;
+	background-image: none;
+	box-shadow: none;
 }
