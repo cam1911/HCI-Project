@@ -1,0 +1,32 @@
+.genres-list {
+	list-style-type: none;
+}
+
+.genres-list ul {
+	display: inline;
+}
+
+.genres-list li {
+	display: inline;
+	color: #fff;
+}
+
+.caption {
+	background-color: #000;
+	opacity: .4;
+	padding: 0px;
+}
+
+.caption h6 {
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
+
+.thumbnail .caption {
+	padding: 0;
+}
+
+.thumbnail {
+	padding: 0;
+}
