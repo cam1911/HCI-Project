@@ -1,16 +1,6 @@
-.genres-list {
-	list-style-type: none;
+#genres {
+	margin-top: 32px;
 }
-
-.genres-list ul {
-	display: inline;
-}
-
-.genres-list li {
-	display: inline;
-	color: #fff;
-}
-
 .caption {
 	background-color: #000;
 	opacity: .4;
