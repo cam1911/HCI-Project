@@ -108,12 +108,20 @@ nav {
   display: inline;
 }
 
+.glyphicon-star {
+  color: #ff5722
+}
+
+.glyphicon-usd {
+  color: #006600;
+}
+
 .featured-info-restaurant {
   text-align: center;
 }
 
 .featured-info-restaurant i {
-  color: #3399FF;
+  color: #006600;
 }
 
 .featured-info-restaurant li {
