@@ -1,7 +1,7 @@
 #genres {
 	margin-top: 32px;
 }
-.caption {
+.col-sm-1 .caption {
 	background-color: #000;
 	opacity: .4;
 	padding: 0px;
@@ -25,4 +25,13 @@
 	border: none;
 	background-image: none;
 	box-shadow: none;
+}
+
+.row h1 {
+	margin-left: 20px;
+}
+
+.browse {
+	background-color: #ff5722;
+	color: #fff;
 }
