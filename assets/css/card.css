@@ -1,0 +1,108 @@
+body {
+  background-color: #fafafa;
+}
+
+@font-face {
+  font-family: futura;
+  src: src(../fonts/Futura Medium.ttf) format("truetype");
+}
+
+.card {
+  width: 280px;
+  height: 240px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: inherit;
+  position: relative;
+  font-family: futura;
+}
+
+.image-container {
+  width: 280px;
+  height: 150px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  position: relative;
+}
+
+.image-container img {
+  width: 280px;
+  height: 150px;
+  margin-top: -24px;
+  top: 0;
+}
+
+.gradient {
+  width: 280px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.56));
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  top: 115px;
+  left: 10px;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.description {
+  font-size: 12px;
+  line-height: 16px;
+  width: 260px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.price-genre {
+  font-size: 11px;
+  line-height: 16px;
+  padding-left: 10px;
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 10px;
+}
+
+.distance {
+  font-size: 11px;
+  line-height: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.rating {
+  position: relative;
+  padding-top: 3px;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}
+
+.num-reviews {
+  font-size: 11px;
+  line-height: 16px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.star-list {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.star-list-element {
+  display: inline;
+}
