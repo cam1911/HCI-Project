@@ -9,6 +9,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="../assets/css/main.css" <!-- Latest compiled and minified JavaScript -->
+	<link rel="stylesheet" href="../assets/css/card.css" <!-- styling for the card -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="../assets/js/app.js"></script>
@@ -51,4 +52,26 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			</ul>
 		</div>
 	</nav>
+	<template id="restaurant-card-template">
+		<div class="card">
+	    <div class="card-image-container">
+	      <div class="card-gradient"></div>
+	      <p class="card-title"></p>
+	    </div>
+	    <p class="card-description">aaaaaaaaaa</p>
+	    <div class="card-rating">
+	      <ul class="card-star-list">
+					<li class="star-list-element"></span></li>
+	        <li class="star-list-element"></span></li>
+	        <li class="star-list-element"></span></li>
+	        <li class="star-list-element"></span></li>
+	        <li class="star-list-element"><</span></li>
+	        <li class="star-list-element"><span class="num-reviews"></span></li>
+	      </ul>
+	    </div>
+	    <p class="card-price"></p>
+			<p class="card-genre"></p>
+	    <p class="card-distance"></p>
+	  </div>
+	</template>
 </body>
