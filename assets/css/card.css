@@ -26,10 +26,15 @@ body {
   height: 150px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  background-image:url("../images/raisingcanes.png");
-  background-size: 280px 150px;
-
   position: relative;
+}
+
+.image-container img {
+  width: 280px;
+  height: 150px;
+  padding: 0;
+  paddinb-bottom: 20px;
+  top: 0;
 }
 
 .gradient {

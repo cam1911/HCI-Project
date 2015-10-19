@@ -1,0 +1,28 @@
+#genres {
+	margin-top: 32px;
+}
+.caption {
+	background-color: #000;
+	opacity: .4;
+	padding: 0px;
+}
+
+.caption h6 {
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
+
+.thumbnail .caption {
+	padding: 0;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.dropdown-toggle {
+	border: none;
+	background-image: none;
+	box-shadow: none;
+}

@@ -1,9 +1,11 @@
 $(document).ready(function(){
+<<<<<<< HEAD
 
   /*******************************/
   /* CARD TEMPLATE CODE          */
   /*******************************/
 
+  /*
   if('content' in document.createElement('template')) {
     // Templates are supported
     var distanceUnit = 'mi';
@@ -51,6 +53,7 @@ $(document).ready(function(){
         'genre': 'Mexican',
         'distance': '13.9' }
     ];
+    */
 
     // get ref to restaurants in main DOM
     var restaurantList = document.getElementByID('restaurants');
@@ -72,4 +75,9 @@ $(document).ready(function(){
     // this is the part where you cry
   }
 
+  $("#nav-bottom-row li a").hover(function(){
+      $(this).css("color", "#ff6130");
+      }, function(){
+      $(this).css("color", "");
+  });
 });

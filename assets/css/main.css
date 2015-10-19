@@ -1,6 +1,6 @@
 @font-face {
     font-family: futura;
-    src: url(../assets/fonts/futura.ttf);
+    src: url(../fonts/futura.ttf);
 }
 
 body {
@@ -11,8 +11,14 @@ nav {
   padding-top: 15px;
 }
 
-#transparent-nav {
-  background-color: rgba(0, 0, 0, 0.6);
+.navbar-custom {
+  background-color: #e74c3c;
+  border-radius: 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: #4d534c;
 }
 
 .navbar-brand {
@@ -23,7 +29,18 @@ nav {
 }
 
 .navbar-form .form-control {
+  margin-right: 10px;
+  padding-left: 25px;
   width: 374px;
+}
+
+.form-group i {
+  left: 25px;
+  top: 4px;
+}
+
+.form-group input {
+  border-radius: 0;
 }
 
 .navbar-header {
@@ -37,16 +54,77 @@ nav {
 
 .navbar-right {
   padding-right: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.navbar-right > li {
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.navbar-right > li > a {
+  padding: 0;
+  padding-top: 5px;
+  display: block;
+  color: #fff;
 }
 
 #nav-bottom-row {
   list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
+  clear: left;
+  width: 100%;
+  float: none;
+  display: inline-block;
 }
 
 #nav-bottom-row li {
-  display: inline;
   margin-right: 15px;
   text-align: center;
+}
+
+#nav-bottom-row li span, #nav-bottom-row li a {
+  color: #fff;
+}
+
+.jumbotron {
+  background: url(../images/featured-image.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+}
+
+.featured-info p {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.featured-info i {
+  color: #ff5722;
+  display: inline;
+}
+
+.glyphicon-star {
+  color: #ff5722
+}
+
+.glyphicon-usd {
+  color: #006600;
+}
+
+.featured-info-restaurant {
+  text-align: center;
+}
+
+.featured-info-restaurant i {
+  color: #006600;
+}
+
+.featured-info-restaurant li {
+  display: inline;
+  margin-right: 5px;
 }
