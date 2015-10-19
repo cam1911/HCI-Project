@@ -1,0 +1,15 @@
+.caption p {
+	font-size: 12px;
+}
+
+.caption > .row {
+	margin-top: 5px;
+}
+
+.caption > .row i {
+	margin-left: 12px;
+}
+
+.thumbnail {
+	padding: 0;
+}
