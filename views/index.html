@@ -20,36 +20,40 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 <body>
 	<nav class="navbar navbar-custom">
 		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
-					<img alt="Brand" src="../assets/images/logo.png">
-				</a>
-			</div>
-			<form class="navbar-form navbar-left" role="search">
-				<div class="form-group">
-					<i class="glyphicon glyphicon-search"></i>
-					<input type="text" class="form-control" placeholder="Italian, Tacos, Steak">
-					<i class="glyphicon glyphicon-map-marker"></i>
-					<input type="text" class="form-control" placeholder="Street Address, City, State">
+			<div class="row">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img alt="Brand" src="../assets/images/logo.png">
+					</a>
 				</div>
-			</form>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<i class="glyphicon glyphicon-user"></i>
-					<a href="">Login / Sign up</a>
-				</li>
-				<li>
-					<i class="glyphicon glyphicon-shopping-cart"></i>
-					<a href="">Basket</a>
-				</li>
-			</ul>
-			<ul class="nav navbar-nav" id="nav-bottom-row">
-				<li><a href="">Home</a></li>
-				<li><a href="genres.html">Restaurants</a></li>
-				<li><a href="">Most Popular</a></li>
-				<li><a href="">Near You</a></li>
-				<li><a href="">Surprise Me</a></li>
-			</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<i class="glyphicon glyphicon-search"></i>
+						<input type="text" class="form-control" placeholder="Italian, Tacos, Steak">
+						<i class="glyphicon glyphicon-map-marker"></i>
+						<input type="text" class="form-control" placeholder="Street Address, City, State">
+					</div>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<i class="glyphicon glyphicon-user"></i>
+						<a href="">Login / Sign up</a>
+					</li>
+					<li>
+						<i class="glyphicon glyphicon-shopping-cart"></i>
+						<a href="">Basket</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<ul class="nav navbar-nav col-sm-4 col-sm-offset-4" id="nav-bottom-row">
+					<li><a href="">Home</a></li>
+					<li><a href="genres.html">Restaurants</a></li>
+					<li><a href="">Most Popular</a></li>
+					<li><a href="">Near You</a></li>
+					<li><a href="">Surprise Me</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<div class="jumbotron">
@@ -169,7 +173,6 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 					<h4>Raising Canes</h4>
 					<p>
 						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
 					</p>
 					<i class="glyphicon glyphicon-star"></i>
 					<i class="glyphicon glyphicon-star"></i>
@@ -180,6 +183,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 					<div class="row">
 						<i class="glyphicon glyphicon-usd"></i>
 						<span>American</span>
+						<span id="distance-away">2.8 miles</span>
 					</div>
 				</div>
 			</div>
