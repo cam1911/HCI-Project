@@ -4,4 +4,11 @@ $(document).ready(function(){
         }, function(){
         $(this).css("color", "");
     });
+    $('#add-review').click(function(){
+      var review = prompt("Leave A Review");
+      if (review != null) {
+        //document.getElementById("review-name").innerHTML =
+        document.getElementById("user-review").innerHTML = review;
+    }
+    })
 });
