@@ -29,9 +29,10 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 				<form class="navbar-form navbar-left" role="search" action="search-restaurants.php" method="post">
 					<div class="form-group">
 						<i class="glyphicon glyphicon-search"></i>
-						<input type="text" class="form-control" placeholder="Italian, Tacos, Steak">
+						<input name="genres" type="text" class="form-control" placeholder="What would you like to eat?">
 						<i class="glyphicon glyphicon-map-marker"></i>
-						<input type="text" class="form-control" placeholder="Zipcode">
+						<input name="zip" type="text" class="form-control" placeholder="Zipcode">
+						<input type="hidden" value="Submit">
 					</div>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
@@ -49,9 +50,6 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 				<ul class="nav navbar-nav col-sm-4 col-sm-offset-4" id="nav-bottom-row">
 					<li><a href="home.html">Home</a></li>
 					<li><a class="active" href="restaurants.html">Restaurants</a></li>
-					<li><a href="restaurants.html">Most Popular</a></li>
-					<li><a href="restaurants.html">Near You</a></li>
-					<li><a href="restaurants.html">Surprise Me</a></li>
 				</ul>
 			</div>
 		</div>
@@ -84,84 +82,84 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	</div>
 	<div class="row" id="genres">
 		<div class="col-sm-1 col-sm-offset-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/american.png" alt="American">
 				<div class="caption">
 					<h6>American</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/italian.png" alt="American">
 				<div class="caption">
 					<h6>Italian</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/mexican.png" alt="American">
 				<div class="caption">
 					<h6>Mexican</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/indian.png" alt="American">
 				<div class="caption">
 					<h6>Indian</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/seafood.png" alt="American">
 				<div class="caption">
 					<h6>Seafood</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/pizza.png" alt="American">
 				<div class="caption">
 					<h6>Pizza</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/sandwiches.png" alt="American">
 				<div class="caption">
 					<h6>Sandwiches</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/chinese.png" alt="American">
 				<div class="caption">
 					<h6>Chinese</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/deli.png" alt="American">
 				<div class="caption">
 					<h6>Deli</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 		<div class="col-sm-1">
-			<div class="thumbnail">
+			<button class="thumbnail">
 				<img src="../assets/images/asian.png" alt="American">
 				<div class="caption">
 					<h6>Asian</h6>
 				</div>
-			</div>
+			</button>
 		</div>
 	</div>
 	<div class="row restaurants">
@@ -195,7 +193,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			<div class="thumbnail">
 				<img src="../assets/images/chikfila.png" alt="American">
 				<div class="caption">
-					<h4>Raising Canes</h4>
+					<h4>Chick fil a</h4>
 					<p>
 						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
 						<span>2.8 miles</span>
@@ -217,7 +215,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			<div class="thumbnail">
 				<img src="../assets/images/chilis.png" alt="American">
 				<div class="caption">
-					<h4>Raising Canes</h4>
+					<h4>Chilis</h4>
 					<p>
 						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
 						<span>2.8 miles</span>
@@ -239,7 +237,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			<div class="thumbnail">
 				<img src="../assets/images/panda.png" alt="American">
 				<div class="caption">
-					<h4>Raising Canes</h4>
+					<h4>Panda Express</h4>
 					<p>
 						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
 						<span>2.8 miles</span>
@@ -263,7 +261,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			<div class="thumbnail">
 				<img src="../assets/images/tacocabana.png" alt="American">
 				<div class="caption">
-					<h4>Raising Canes</h4>
+					<h4>Olive Garden</h4>
 					<p>
 						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
 						<span>2.8 miles</span>
@@ -285,51 +283,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			<div class="thumbnail">
 				<img src="../assets/images/raisingcanes.png" alt="American">
 				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
+					<h4>Taco Cabana</h4>
 					<p>
 						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
 						<span>2.8 miles</span>
@@ -356,162 +310,6 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	</div>
 	</div>
 	<div class="row restaurants" id="restaurants">
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row restaurants">
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Raising Canes</h4>
-					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
-						<span>2.8 miles</span>
-					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="col-sm-3">
 			<div class="thumbnail">
 				<img src="../assets/images/raisingcanes.png" alt="American">

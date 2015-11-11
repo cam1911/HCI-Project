@@ -6,11 +6,14 @@ $(document).ready(function(){
         $(this).css("color", "");
         $(this).css("background-color", "#4d534c");
     });
+    $("#genres img").click(function() {
+      $(this).css("opacity", "1");
+    });
     $('#add-review').click(function(){
       var review = prompt("Leave A Review");
       if (review != null) {
         //document.getElementById("review-name").innerHTML =
         document.getElementById("user-review").innerHTML = review;
     }
-    })
+  });
 });

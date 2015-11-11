@@ -1,6 +1,10 @@
 #genres {
 	margin-top: 32px;
 }
+
+#genres img {
+	opacity: .5;
+}
 .col-sm-1 .caption {
 	background-color: #000;
 	opacity: .4;
