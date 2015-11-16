@@ -14,6 +14,10 @@
   text-align: center;
 }
 
+.row {
+  margin-top: 10px;
+}
+
 .row h1 {
   margin: 10px;
 }
