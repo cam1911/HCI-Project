@@ -56,7 +56,7 @@
         <div class="col-sm-4"></div>
         <div class="box-container col-sm-4">
           <div class="row">
-            <h2>Chik-Fil-A</h2>
+            <h2 id="box-container-header">Chik-Fil-A</h2>
           </div>
           <div class="row">
             <div class="col-sm-4 c1">
@@ -209,7 +209,55 @@
       </div>
     </div>
 
-    <div class="row box-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Order Summary</h1>
+          </div>
+          <div class="row">
+            <h2 id="order-summary-restaurant">Chik-Fil-A</h2>
+          </div>
+          <div class="item-list row">
+            <div class="col-sm-5 col-sm-offset-3">
+              <ul>
+                <li><span>Food</span></li>
+                <li><span>Delivery</span></li>
+              </ul>
+            </div>
+            <div class="price-list col-sm-4">
+              <ul>
+                <li><span>$10.97</span></li>
+                <li><span>$4.00</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row"></div>
+            <div class="seperator col-sm-12"></div>
+          <div class="row">
+            <div class="item-list col-sm-6">
+              <ul>
+                <li><h2>SubTotal</h2></li>
+                <li><h2>Tax</h2></li>
+                <li><h2 id="total">Total</h2></li>
+              </ul>
+            </div>
+            <div class="price-list col-sm-6">
+              <ul>
+                <li><h2>$14.97</h2></li>
+                <li><h2>$1.27</h2></li>
+                <li><h2 id="total">$16.24</h2></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-default">Place Order!</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

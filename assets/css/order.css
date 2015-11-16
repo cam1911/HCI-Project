@@ -10,7 +10,7 @@
   padding-bottom: 20px;
 }
 
-.box-container h2 {
+#box-container-header h2 {
   text-align: center;
 }
 
@@ -47,9 +47,37 @@
   padding: 0;
 }
 
+.price-list {
+  text-align: right;
+}
+
+.price-list ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
 .c3 {
 }
 
 .item-list ul {
   list-style-type: none;
+}
+
+#order-summary-restaurant {
+  margin: 10px;
+}
+
+#total {
+  color: #ff6130;
+}
+
+.seperator {
+  height: 2px;
+  background-color: #979797;
+}
+
+.btn-default {
+  width: 100%;
+  color: #ffffff;
+  background: #ff6130;
 }
