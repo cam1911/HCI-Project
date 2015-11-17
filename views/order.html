@@ -1,0 +1,263 @@
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/order.css"
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="../assets/js/app.js"></script>
+</head>
+
+<body ng-App="chowNow">
+  <nav class="navbar navbar-custom">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home.html">
+					<img alt="Brand" src="../assets/images/logo.png">
+				</a>
+			</div>
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<i class="glyphicon glyphicon-search"></i>
+					<input type="text" class="form-control" placeholder="Italian, Tacos, Steak">
+					<i class="glyphicon glyphicon-map-marker"></i>
+					<input type="text" class="form-control" placeholder="Street Address, City, State">
+				</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<i class="glyphicon glyphicon-user"></i>
+					<a href="">Login / Sign up</a>
+				</li>
+				<li>
+					<i class="glyphicon glyphicon-shopping-cart"></i>
+					<a href="">Basket</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav" id="nav-bottom-row">
+				<li><a href="home.html">Home</a></li>
+				<li><a class="active" href="restaurants.html">Restaurants</a></li>
+				<li><a href="restaurants.html">Most Popular</a></li>
+				<li><a href="restaurants.html">Near You</a></li>
+				<li><a href="restaurants.html">Surprise Me</a></li>
+			</ul>
+		</div>
+	</nav>
+
+  <div class="order-containter">
+    <h1>Your Order</h1>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="box-container col-sm-4">
+          <div class="row">
+            <h2 id="box-container-header">Chik-Fil-A</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 c1">
+              <img src="../assets/images/chikfila.png">
+            </div>
+            <div class="item-list col-sm-4 c2">
+              <ul>
+                <li><span>Chicken Sandwich</span></li>
+                <li><span>Waffle Fries</span></li>
+                <li><span>IceDream</span></li>
+              </ul>
+            </div>
+            <div class="item-list col-sm-4 c3">
+              <ul>
+                <li><span>$5.99</span></li>
+                <li><span>$1.99</span></li>
+                <li><span>$2.99</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Delivery Information</h1>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>Address</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>City</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="col-sm-3">
+                <span>State</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-sm-3">
+                <span>ZIP</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="notes-input row">
+            <span>Notes</span>
+            <input type="text" class="form-control">
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Payment Information</h1>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>Card Number</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>CVV</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="col-sm-3">
+                <span>Expiration (MM/YY)</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>Billing Address</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>City</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>State</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>ZIP</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Order Summary</h1>
+          </div>
+          <div class="row">
+            <h2 id="order-summary-restaurant">Chik-Fil-A</h2>
+          </div>
+          <div class="item-list row">
+            <div class="col-sm-5 col-sm-offset-3">
+              <ul>
+                <li><span>Food</span></li>
+                <li><span>Delivery</span></li>
+              </ul>
+            </div>
+            <div class="price-list col-sm-4">
+              <ul>
+                <li><span>$10.97</span></li>
+                <li><span>$4.00</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row"></div>
+            <div class="seperator col-sm-12"></div>
+          <div class="row">
+            <div class="item-list col-sm-6">
+              <ul>
+                <li><h2>SubTotal</h2></li>
+                <li><h2>Tax</h2></li>
+                <li><h2 id="total">Total</h2></li>
+              </ul>
+            </div>
+            <div class="price-list col-sm-6">
+              <ul>
+                <li><h2>$14.97</h2></li>
+                <li><h2>$1.27</h2></li>
+                <li><h2 id="total">$16.24</h2></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-default">Place Order!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
