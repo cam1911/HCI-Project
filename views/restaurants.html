@@ -65,7 +65,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<div class="row restaurants">
 		<div class="col-sm-3" data-bind="foreach: restaurantsList">
 			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
+				<img data-bind="attr: { src: imageSrc }">
 				<div class="caption">
 					<h4 data-bind="text: name"></h4>
 					<p data-bind="text: description"></p>

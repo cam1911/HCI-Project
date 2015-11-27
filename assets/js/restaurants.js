@@ -15,6 +15,7 @@ function RestaurantViewModel() {
 			numReview: 30,
 			meanPrice: 1,
 			foodType: 'Chicken',
+			imageSrc: '../assets/images/chikfila.png',
 		},
 		{
 			name: 'Raising Canes',
@@ -23,6 +24,7 @@ function RestaurantViewModel() {
 			numReview: 25,
 			meanPrice: 2,
 			foodType: 'Chicken',
+			imageSrc: '../assets/images/raisingcanes.png',
 		},
 		{
 			name: 'Panda Express',
@@ -31,6 +33,7 @@ function RestaurantViewModel() {
 			numReview: 20,
 			meanPrice: 1,
 			foodType: 'Asian',
+			imageSrc: '../assets/images/panda.png',
 		},
 		{
 			name: 'Chilis',
@@ -39,6 +42,7 @@ function RestaurantViewModel() {
 			numReview: 30,
 			meanPrice: 2,
 			foodType: 'Tex Mex',
+			imageSrc: '../assets/images/chilis.png',
 		},
 		{
 			name: 'Olive Garden',
@@ -47,6 +51,7 @@ function RestaurantViewModel() {
 			numReview: 10,
 			meanPrice: 2,
 			foodType: 'Italian',
+			imageSrc: '../assets/images/olivegarden.png',
 		},
 		{
 			name: 'Taco Cabana',
@@ -55,6 +60,7 @@ function RestaurantViewModel() {
 			numReview: 10,
 			meanPrice: 2,
 			foodType: 'Mexican',
+			imageSrc: '../assets/images/tacocabana.png',
 		},
 	];
 
