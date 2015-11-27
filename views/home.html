@@ -14,6 +14,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
 	<script src="../assets/js/app.js"></script>
 </head>
 
@@ -22,147 +23,41 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 		<div class="container-fluid">
 			<div class="row">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="home.html">
 						<img alt="Brand" src="../assets/images/logo.png">
 					</a>
 				</div>
-				<form class="navbar-form navbar-left" role="search" action="search-restaurants.php" method="post">
-					<div class="form-group">
-						<i class="glyphicon glyphicon-map-marker"></i>
-						<label>Zipcode</label>
-						<input name="zip" type="text" class="form-control" placeholder="xxxxx">
-						<input type="hidden" value="Submit">
-					</div>
-				</form>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<i class="glyphicon glyphicon-user"></i>
-						<a href="">Login / Sign up</a>
-					</li>
-					<li>
 						<i class="glyphicon glyphicon-shopping-cart"></i>
-						<a href="">Shopping Cart</a>
+						<a href="cart.html">Shopping Cart</a>
 					</li>
-				</ul>
-			</div>
-			<div class="row">
-				<ul class="nav navbar-nav col-sm-4 col-sm-offset-4" id="nav-bottom-row">
-					<li><a href="home.html">Home</a></li>
-					<li><a class="active" href="restaurants.html">Restaurants</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div class="jumbotron">
 		<div class="featured-info">
-			<h1>Chick-fil-a</h1>
+			<h1>Popular Restaurant Name</h1>
 			<div>
-				<i class="glyphicon glyphicon-star"></i>
-				<i class="glyphicon glyphicon-star"></i>
-				<i class="glyphicon glyphicon-star"></i>
-				<i class="glyphicon glyphicon-star"></i>
-				<i class="glyphicon glyphicon-star"></i>
-				<span>29 reviews</span>
+				<span>Rating</span>
+				<span>Number of Reviews</span>
 			</div>
 			<ul class="featured-info-restaurant">
 				<li>
 					<i class="glyphicon glyphicon-usd"></i>
 				</li>
-				<li>American</li>
-				<li>2.3 miles</li>
+				<li>Food Type</li>
+				<li>Distance Away</li>
 			</ul>
 			<p>
-				Fast-food chain serving chicken sandwiches, strips and nuggets along with salads and sides.
+				Restaurant Description
 			</p>
 		</div>
 	</div>
+
 	<div class="row restaurants">
-		<h1>Genres<button class="btn browse col-sm-offset-9 pull-right">Browse</button></h1>
-	</div>
-	<div class="row" id="genres">
-		<div class="col-sm-1 col-sm-offset-1">
-			<button class="thumbnail">
-				<img src="../assets/images/american.png" alt="American">
-				<div class="caption">
-					<h6>American</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/italian.png" alt="American">
-				<div class="caption">
-					<h6>Italian</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/mexican.png" alt="American">
-				<div class="caption">
-					<h6>Mexican</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/indian.png" alt="American">
-				<div class="caption">
-					<h6>Indian</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/seafood.png" alt="American">
-				<div class="caption">
-					<h6>Seafood</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/pizza.png" alt="American">
-				<div class="caption">
-					<h6>Pizza</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/sandwiches.png" alt="American">
-				<div class="caption">
-					<h6>Sandwiches</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/chinese.png" alt="American">
-				<div class="caption">
-					<h6>Chinese</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/deli.png" alt="American">
-				<div class="caption">
-					<h6>Deli</h6>
-				</div>
-			</button>
-		</div>
-		<div class="col-sm-1">
-			<button class="thumbnail">
-				<img src="../assets/images/asian.png" alt="American">
-				<div class="caption">
-					<h6>Asian</h6>
-				</div>
-			</button>
-		</div>
-	</div>
-	<div class="row restaurants">
-		<h1>Restaurants<button class="btn browse col-sm-offset-9 pull-right">Browse</button></h1>
+		<h1>Restaurants</h1>
 	</div>
 
 	<div class="row restaurants">
@@ -170,20 +65,15 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 			<div class="thumbnail">
 				<img src="../assets/images/raisingcanes.png" alt="American">
 				<div class="caption">
-					<h4>Raising Canes</h4>
+					<h4>Rest. Name</h4>
 					<p>
-						Fast-food chain specializing in fried chicken fingers, crinkle-cut fries and Texas toast.
+						Rest. Desc.
 					</p>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<span>37 Reviews</span>
+					<span>Num Reviews</span>
 					<div class="row">
 						<i class="glyphicon glyphicon-usd"></i>
-						<span>American</span>
-						<span id="distance-away">2.8 miles</span>
+						<span>Food Type</span>
+						<span id="distance-away">Distance Away</span>
 					</div>
 				</div>
 			</div>
