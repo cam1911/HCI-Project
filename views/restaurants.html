@@ -62,7 +62,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	</div>
 
 	<div class="row restaurants">
-		<ul class="col-sm-3" data-bind="foreach: restaurantsList">
+		<ul class="col-sm-4" data-bind="foreach: restaurantsList">
 			<a href="restaurant-info.html">
 				<li class="thumbnail restaurant">
 					<img data-bind="attr: { src: imageSrc }">
@@ -71,7 +71,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 						<p data-bind="text: description"></p>
 						<span data-bind="text: numReview"></span>
 						<span>Reviews</span>
-						<div class="row">
+						<div>
 							<i class="glyphicon glyphicon-usd"></i>
 							<span data-bind="text: foodType"></span>
 							<span class="pull-right">Distance Away</span>
