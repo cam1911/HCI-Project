@@ -1,0 +1,30 @@
+<head>
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
+	<script src="../assets/js/cart.js" defer="defer"></script>
+</head>
+<body>
+
+
+<h2>Your Items (<span data-bind="text: seats().length"></span>)</h2>
+
+<table>
+    <thead><tr>
+        <th>Item</th>
+        <th>Meal</th>
+    </tr></thead>
+    <tbody data-bind="foreach: seats">
+        <tr>
+            <td><select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select></td>
+            <td data-bind="text: formattedPrice"></td>
+            <td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<button data-bind="click: addSeat, enable: seats().length < 5">Add Another Item</button>
+
+<h3 data-bind="visible: totalSurcharge() > 0">
+    Total: $<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+</h3>
+
+</body>
