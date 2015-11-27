@@ -15,7 +15,6 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
-	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
 	<script src="../assets/js/restaurants.js" defer="defer"></script>
 	<script src="../assets/js/app.js"></script>
 </head>
@@ -64,20 +63,22 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 
 	<div class="row restaurants">
 		<ul class="col-sm-3" data-bind="foreach: restaurantsList">
-			<li class="thumbnail restaurant">
-				<img data-bind="attr: { src: imageSrc }">
-				<div class="caption">
-					<h4 data-bind="text: name"></h4>
-					<p data-bind="text: description"></p>
-					<span data-bind="text: numReview"></span>
-					<span>Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span data-bind="foodType"></span>
-						<span class="right">Distance Away</span>
+			<a href="restaurant-info.html">
+				<li class="thumbnail restaurant">
+					<img data-bind="attr: { src: imageSrc }">
+					<div class="caption">
+						<h4 data-bind="text: name"></h4>
+						<p data-bind="text: description"></p>
+						<span data-bind="text: numReview"></span>
+						<span>Reviews</span>
+						<div class="row">
+							<i class="glyphicon glyphicon-usd"></i>
+							<span data-bind="text: foodType"></span>
+							<span class="pull-right">Distance Away</span>
+						</div>
 					</div>
-				</div>
-			</li>
+				</li>
+			</a>
 		</ul>
 	</div>
 </body>

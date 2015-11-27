@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#nav-bottom-row li a").hover(function(){
+    $("nav li a").hover(function(){
         $(this).css("color", "#ff6130");
         $(this).css("background-color", "#4d534c");
         }, function(){
