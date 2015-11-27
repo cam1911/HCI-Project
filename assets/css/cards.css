@@ -18,11 +18,15 @@
 	padding: 0;
 }
 
-#distance-away {
-	margin-left: 150px;
-}
-
 .restaurants {
 	margin-left: 66px;
 	margin-right: 66px;
+}
+
+.restaurant {
+	display: inline-block;
+}
+
+.right {
+	text-align: right;
 }

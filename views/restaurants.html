@@ -59,24 +59,25 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	</div>
 
 	<div class="row restaurants">
-		<h1>Restaurants (<span data-bind="text: restaurants().length"></span>)</h1>
+		<h1>Restaurants</h1>
 	</div>
 
 	<div class="row restaurants">
-		<div class="col-sm-3" data-bind="foreach: restaurantsList">
-			<div class="thumbnail">
+		<ul class="col-sm-3" data-bind="foreach: restaurantsList">
+			<li class="thumbnail restaurant">
 				<img data-bind="attr: { src: imageSrc }">
 				<div class="caption">
 					<h4 data-bind="text: name"></h4>
 					<p data-bind="text: description"></p>
 					<span data-bind="text: numReview"></span>
+					<span>Reviews</span>
 					<div class="row">
 						<i class="glyphicon glyphicon-usd"></i>
 						<span data-bind="foodType"></span>
-						<span id="distance-away">Distance Away</span>
+						<span class="right">Distance Away</span>
 					</div>
 				</div>
-			</div>
-		</div>
+			</li>
+		</ul>
 	</div>
 </body>
