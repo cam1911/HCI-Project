@@ -62,8 +62,8 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	</div>
 
 	<div class="row restaurants">
-		<ul class="col-sm-4" data-bind="foreach: restaurantsList">
-			<a href="restaurant-info.html">
+		<ul data-bind="foreach: restaurantsList">
+			<a class="col-sm-3" href="restaurant-info.html">
 				<li class="thumbnail restaurant">
 					<img data-bind="attr: { src: imageSrc }">
 					<div class="caption">

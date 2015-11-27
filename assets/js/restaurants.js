@@ -11,7 +11,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Chick-Fil-A',
 			rating: 5,
-			description: 'Fast-food chain specializing in fried chicken fingers, crinkle-cut fries & Texas toast.',
+			description: 'Fast food chicken place',
 			numReview: 30,
 			meanPrice: 1,
 			foodType: 'Chicken',
@@ -20,7 +20,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Raising Canes',
 			rating: 4,
-			description: 'Fast-food chain specializing in fried chicken fingers, crinkle-cut fries & Texas toast.',
+			description: 'A better fast food chicken place',
 			numReview: 25,
 			meanPrice: 2,
 			foodType: 'Chicken',
