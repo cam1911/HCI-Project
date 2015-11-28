@@ -10,7 +10,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<link rel="stylesheet" href="../assets/css/cards.css">
-	<link rel="stylesheet" href="../assets/css/genres.css">
+	<link rel="stylesheet" href="../assets/css/home.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -27,57 +27,18 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 						<img alt="Brand" src="../assets/images/logo.png">
 					</a>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<i class="glyphicon glyphicon-shopping-cart"></i>
-						<a href="cart.html">Shopping Cart</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="jumbotron">
-		<div class="featured-info">
-			<h1>Popular Restaurant Name</h1>
-			<div>
-				<span>Rating</span>
-				<span>Number of Reviews</span>
-			</div>
-			<ul class="featured-info-restaurant">
-				<li>
-					<i class="glyphicon glyphicon-usd"></i>
-				</li>
-				<li>Food Type</li>
-				<li>Distance Away</li>
-			</ul>
-			<p>
-				Restaurant Description
-			</p>
-		</div>
-	</div>
-
-	<div class="row restaurants">
-		<h1>Restaurants</h1>
-	</div>
-
-	<div class="row restaurants">
-		<div class="col-sm-3">
-			<div class="thumbnail">
-				<img src="../assets/images/raisingcanes.png" alt="American">
-				<div class="caption">
-					<h4>Rest. Name</h4>
-					<p>
-						Rest. Desc.
-					</p>
-					<span>Num Reviews</span>
-					<div class="row">
-						<i class="glyphicon glyphicon-usd"></i>
-						<span>Food Type</span>
-						<span id="distance-away">Distance Away</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a href="restaurants.html">Rest</a>
+	<div class="search_container">
+		<form class="form-inline">
+			<label>Enter your zip code</label>
+			<input type="text" class="form-control" placeholder="xxxxxx" pattern="(\d{5}?)">
+			<select class="form-control">
+				<option>Delivery</option>
+				<option>Pickup</option>
+			</select>
+			<button class="btn browse" type="submit">Submit</button>
+		</form>
 	</div>
 </body>
