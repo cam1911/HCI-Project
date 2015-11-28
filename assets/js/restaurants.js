@@ -38,7 +38,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Chilis',
 			rating: 3,
-			description: 'Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style…',
+			description: 'Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style',
 			numReview: 30,
 			meanPrice: 2,
 			foodType: 'Tex Mex',

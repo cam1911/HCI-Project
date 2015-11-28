@@ -18,37 +18,44 @@ function ReservationsViewModel() {
         {
           mealName: "Meal 1",
           price: 7.99,
-          description: 'The most popular meal. Its pretty good'
+          description: 'The most popular meal. Its pretty good',
+          imageSrc: '../assets/images/american.png',
         },
         {
           mealName: "Meal 2",
           price: 6.99,
-          description: 'A less popular meal'
+          description: 'A less popular meal',
+          imageSrc: '../assets/images/deli.png',
         },
         {
           mealName: "Meal 3",
           price: 5.99,
-          description: 'Our worst meal ever'
+          description: 'Our worst meal ever',
+          imageSrc: '../assets/images/pizza.png',
         },
         {
           mealName: "Sandwich",
           price: 3.99,
-          description: 'A pretty damn good sandwich'
+          description: 'A pretty damn good sandwich',
+          imageSrc: '../assets/images/deli.png',
         },
         {
           mealName: "Fries",
           price: 2.99,
-          description: 'Salty fries for salty people'
+          description: 'Salty fries for salty people',
+          imageSrc: '../assets/images/italian.png',
         },
         {
           mealName: "Drink",
           price: 1.99,
-          description: 'Drank for people who are too thirsty'
+          description: 'Drank for people who are too thirsty',
+          imageSrc: '../assets/images/indian.png',
         },
         {
           mealName: "Cookie",
           price: 1.99,
-          description: 'Its actually just a cookie'
+          description: 'Its actually just a cookie',
+          imageSrc: '../assets/images/sandwiches.png',
         },
     ];
 

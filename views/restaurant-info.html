@@ -60,7 +60,7 @@
 	<div class="row restaurants">
 		<ul data-bind="foreach: availableMeals">
 			<li class="menu-item">
-				<img class="img-responsive" src="../assets/images/mexican.png">
+				<img class="img-responsive" data-bind="attr: { src: imageSrc }">
 				<div class="menu-item-info">
 					<h4 data-bind="text: mealName"></h4>
 					<p data-bind="text: description"></p>
