@@ -15,9 +15,41 @@ function ReservationsViewModel() {
 
     // Non-editable catalog data - would come from the server
     self.availableMeals = [
-        { mealName: "Sandwich", price: 5.99 },
-        { mealName: "Fries", price: 3.99 },
-        { mealName: "Ice Cream", price: 2.99 }
+        {
+          mealName: "Meal 1",
+          price: 7.99,
+          description: 'The most popular meal'
+        },
+        {
+          mealName: "Meal 2",
+          price: 6.99,
+          description: 'A less popular meal'
+        },
+        {
+          mealName: "Meal 3",
+          price: 5.99,
+          description: 'Our worst meal ever'
+        },
+        {
+          mealName: "Sandwich",
+          price: 3.99,
+          description: 'A pretty damn good sandwich'
+        },
+        {
+          mealName: "Fries",
+          price: 2.99,
+          description: 'Salty fries for salty people'
+        },
+        {
+          mealName: "Drink",
+          price: 1.99,
+          description: 'Drank for people who are too thirsty'
+        },
+        {
+          mealName: "Cookie",
+          price: 1.99,
+          description: 'Its actually just a cookie'
+        },
     ];
 
     // Editable data
@@ -28,8 +60,9 @@ function ReservationsViewModel() {
     // Computed data
     self.totalSurcharge = ko.computed(function() {
        var total = 0;
-       for (var i = 0; i < self.seats().length; i++)
-           total += self.seats()[i].meal().price;
+       for (var i = 0; i < self.seats().length; i++) {
+         total += self.seats()[i].meal().price;
+        }
        return total;
     });
 

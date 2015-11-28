@@ -23,6 +23,15 @@
 	margin-right: 66px;
 }
 
+.restaurants ul {
+	list-style-type: none;
+}
+
+.restaurants ul li {
+	display: inline-block;
+	margin: 10px;
+}
+
 .restaurant {
 	display: inline-block;
 }

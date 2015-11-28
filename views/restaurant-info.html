@@ -12,7 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
-	<script src="../assets/js/restaurants.js" defer="defer"></script>
+	<script src="../assets/js/cart.js" defer="defer"></script>
 	<script src="../assets/js/app.js"></script>
 </head>
 
@@ -35,8 +35,8 @@
 		</div>
 	</nav>
 
-	<div class="jumbotron">
-		<div class="featured-info">
+	<!-- <div class="jumbotron">
+		<div class="featured-info" data-bind="with: restaurantsList[0]">
 			<h1 data-bind="text: name"></h1>
 			<div>
 				<span data-bind="text: rating"></span>
@@ -51,169 +51,28 @@
 			</ul>
 			<p data-bind="text: description"></p>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="row restaurants">
 		<h1>Meals</h1>
 	</div>
 
 	<div class="row restaurants">
-		<div class="col-sm-4 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #1</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
+		<ul data-bind="foreach: availableMeals">
+			<li class="menu-item">
+				<img src="../assets/images/mexican.png">
+				<div class="caption col-sm-5">
+					<h4 data-bind="text: mealName"></h4>
+					<p data-bind="text: description"></p>
+					<div class="price-info">
+						<span class="glyphicon glyphicon-usd" data-bind="text: price"></span>
+						<button class=" btn browse pull-right">
+							<span class="glyphicon glyphicon-plus" id="color-white"></span> Add
+						</button>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-sm-offset-1 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #2</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row restaurants">
-		<div class="col-sm-4 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #3</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-sm-offset-1 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #4</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row restaurants">
-		<h1 class="col-sm-4">Entrees</h1>
-		<h1 class="col-sm-4">Sides</h1>
-	</div>
-	<div class="row restaurants">
-		<div class="col-sm-4 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #3</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-sm-offset-1 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #4</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row restaurants">
-		<div class="col-sm-4 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #3</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-sm-offset-1 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #4</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row restaurants">
-		<h1 class="col-sm-4">Breakfast</h1>
-		<h1 class="col-sm-4">Dessert</h1>
-	</div>
-	<div class="row restaurants">
-		<div class="col-sm-4 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #3</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-sm-offset-1 menu-item">
-			<img src="../assets/images/mexican.png">
-			<div class="caption col-sm-6">
-				<h4>Meal #4</h4>
-				<p>
-					Get a chicken sandwich, with waffle fries and a medium drink! Our most popular meal.
-				</p>
-				<div class="price-info">
-					<span class="glyphicon glyphicon-usd">12.99</span>
-					<button class=" btn browse pull-right">
-						<span class="glyphicon glyphicon-plus" id="color-white"></span> Add</button>
-				</div>
-			</div>
-		</div>
+			</li>
+		</ul>
 	</div>
 	<div class="row restaurants">
 		<h1>12 Reviews
