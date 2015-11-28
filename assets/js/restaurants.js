@@ -11,7 +11,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Chick-Fil-A',
 			rating: 5,
-			description: 'Fast food chicken place',
+			description: 'Fast-food chain serving chicken sandwiches, strips & nuggets along with salads & sides.',
 			numReview: 30,
 			meanPrice: 1,
 			foodType: 'Chicken',
@@ -20,7 +20,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Raising Canes',
 			rating: 4,
-			description: 'A better fast food chicken place',
+			description: 'Fast-food chain specializing in fried chicken fingers, crinkle-cut fries & Texas toast.',
 			numReview: 25,
 			meanPrice: 2,
 			foodType: 'Chicken',
@@ -29,7 +29,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Panda Express',
 			rating: 3,
-			description: 'Authentic asian cuisine',
+			description: 'Fast-food chain for Chinese standards, including some health-conscious options.',
 			numReview: 20,
 			meanPrice: 1,
 			foodType: 'Asian',
@@ -38,7 +38,7 @@ function RestaurantViewModel() {
 		{
 			name: 'Chilis',
 			rating: 3,
-			description: 'Tex Mex Grill',
+			description: 'Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style…',
 			numReview: 30,
 			meanPrice: 2,
 			foodType: 'Tex Mex',

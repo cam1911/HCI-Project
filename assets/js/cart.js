@@ -18,7 +18,7 @@ function ReservationsViewModel() {
         {
           mealName: "Meal 1",
           price: 7.99,
-          description: 'The most popular meal'
+          description: 'The most popular meal. Its pretty good'
         },
         {
           mealName: "Meal 2",
