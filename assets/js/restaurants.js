@@ -16,6 +16,7 @@ function RestaurantViewModel() {
 			meanPrice: 1,
 			foodType: 'Chicken',
 			imageSrc: '../assets/images/chikfila.png',
+			zip: '75080',
 		},
 		{
 			name: 'Raising Canes',
@@ -25,6 +26,7 @@ function RestaurantViewModel() {
 			meanPrice: 2,
 			foodType: 'Chicken',
 			imageSrc: '../assets/images/raisingcanes.png',
+			zip: '75080',
 		},
 		{
 			name: 'Panda Express',
@@ -34,6 +36,7 @@ function RestaurantViewModel() {
 			meanPrice: 1,
 			foodType: 'Asian',
 			imageSrc: '../assets/images/panda.png',
+			zip: '75080',
 		},
 		{
 			name: 'Chilis',
@@ -43,6 +46,7 @@ function RestaurantViewModel() {
 			meanPrice: 2,
 			foodType: 'Tex Mex',
 			imageSrc: '../assets/images/chilis.png',
+			zip: '75090',
 		},
 		{
 			name: 'Olive Garden',
@@ -52,6 +56,7 @@ function RestaurantViewModel() {
 			meanPrice: 2,
 			foodType: 'Italian',
 			imageSrc: '../assets/images/olivegarden.png',
+			zip: '75090',
 		},
 		{
 			name: 'Taco Cabana',
@@ -61,6 +66,7 @@ function RestaurantViewModel() {
 			meanPrice: 2,
 			foodType: 'Mexican',
 			imageSrc: '../assets/images/tacocabana.png',
+			zip: '75090',
 		},
 	];
 
