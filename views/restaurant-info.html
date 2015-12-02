@@ -84,8 +84,9 @@
 		<button class="btn" id="add-review">
 			Leave a review
 		</button>
-		<input type="text" name="review" id="review-text">
-		<button class="btn" id="submit">
+		<input type="text" name="name" id="review-name" placeholder="Write your name here...">
+		<input type="text" name="review" id="review-text" placeholder="Write your review here...">
+		<button class="btn" id="submit" data-bind="click: addReview">
 			Submit
 		</button>
 		<button class="btn" id="cancel">
@@ -93,10 +94,17 @@
 		</button>
 	</div>
 	<div class="row restaurants">
-		<div class="caption col-sm-3 reviews">
+		<div class="caption col-sm-4 reviews">
 			<img class="img-circle" src="../assets/images/asian.png">
 			<h4>Review</h4>
-			<p id="user-review"></p>
+			<table class="review-table">
+				<tbody id="user-review" data-bind="foreach: initiateReviews">
+					<tr>
+						<td data-bind="text: name"></td>
+						<td data-bind="text: body"></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </body>
