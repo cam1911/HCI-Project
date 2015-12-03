@@ -8,6 +8,12 @@ function SeatReservation(initialMeal) {
         return price ? "$" + price.toFixed(2) : "None";
     });
 
+    self.addTax = ko.computed(function() {
+      var price = self.meal().price;
+      var tax = ( price * .0825 ) + price;
+      return price ? "$" + price.toFixed(2) : "None";
+    })
+
     var zip = document.getElementById('zip');
 }
 
