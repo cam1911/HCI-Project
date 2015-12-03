@@ -1,32 +1,49 @@
 <head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/cards.css">
+	<link rel="stylesheet" href="../assets/css/home.css">
+
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
 	<script src="../assets/js/cart.js" defer="defer"></script>
 </head>
+
 <body>
 
 
-<h2>Your Items (<span data-bind="text: seats().length"></span>)</h2>
+	<h2>Your Items (
+		<span data-bind="text: seats().length"></span>)</h2>
+	<form class="form-inline" action="order.html">
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Meal</th>
+				</tr>
+			</thead>
+			<tbody data-bind="foreach: seats">
+				<tr>
+					<td>
+						<select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select>
+					</td>
+					<td data-bind="text: formattedPrice"></td>
+					<td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
+				</tr>
+			</tbody>
+		</table>
 
-<table>
-    <thead><tr>
-        <th>Item</th>
-        <th>Meal</th>
-    </tr></thead>
-    <tbody data-bind="foreach: seats">
-        <tr>
-            <td>
-							<select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select>
-						</td>
-            <td data-bind="text: formattedPrice"></td>
-            <td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
-        </tr>
-    </tbody>
-</table>
+		<button class="btn browse" data-bind="click: addSeat, enable: seats().length < 5">Add Another Item</button>
 
-<button data-bind="click: addSeat, enable: seats().length < 5">Add Another Item</button>
+		<h3 data-bind="visible: totalSurcharge() > 0">
+			Total: $
+			<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+		</h3>
 
-<h3 data-bind="visible: totalSurcharge() > 0">
-    Total: $<span data-bind="text: totalSurcharge().toFixed(2)"></span>
-</h3>
+		<button class="btn browse" type="submit">Checkout</button>
+	</form>
 
 </body>
