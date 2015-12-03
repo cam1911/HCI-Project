@@ -79,4 +79,7 @@ function RestaurantViewModel() {
 	]);
 }
 
+// var zipcode = document.getElementById('zip').value;
+// console.log(zipcode);
+
 ko.applyBindings(new RestaurantViewModel());

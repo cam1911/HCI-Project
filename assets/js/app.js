@@ -29,8 +29,6 @@ $(document).ready(function(){
     });
     */
     $('#cancel').click(hideReviewBox());
-    var zipcode = getElementById('zip').value;
-    console.log(zipcode);
 });
 
 function showReviewBox() {
