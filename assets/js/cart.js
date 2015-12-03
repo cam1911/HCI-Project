@@ -52,21 +52,21 @@ function ReservationsViewModel() {
           imageSrc: '../assets/images/deli.png',
         },
         {
-          mealName: "Fries",
+          mealName: "Spaghetti",
           price: 2.99,
-          description: 'Salty fries for salty people',
+          description: 'Spaghetti and meatballs with tomato sauce',
           imageSrc: '../assets/images/italian.png',
         },
         {
-          mealName: "Drink",
+          mealName: "Specialty Plate",
           price: 1.99,
-          description: 'Drank for people who are too thirsty',
+          description: 'Chefs special limited edition plate',
           imageSrc: '../assets/images/indian.png',
         },
         {
-          mealName: "Cookie",
+          mealName: "Panini",
           price: 1.99,
-          description: 'Its actually just a cookie',
+          description: 'A grilled sandwich pressed to perfection',
           imageSrc: '../assets/images/sandwiches.png',
         },
     ];
