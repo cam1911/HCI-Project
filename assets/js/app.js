@@ -29,6 +29,8 @@ $(document).ready(function(){
     });
     */
     $('#cancel').click(hideReviewBox());
+    var zipcode = getElementById('zip').value;
+    console.log(zipcode);
 });
 
 function showReviewBox() {
@@ -85,6 +87,3 @@ function ReviewsViewModel() {
 }
 
 ko.applyBindings(ReviewsViewModel());
-
-var zipcode = getElementById('zip').value;
-console.log(zipcode);

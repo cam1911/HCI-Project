@@ -15,6 +15,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
+	<script src="../assets/js/restaurants.js" defer="defer"></script>
 	<script src="../assets/js/app.js"></script>
 </head>
 
@@ -33,8 +34,8 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<div class="search_container">
 		<form class="form-inline" action="restaurants.html">
 			<label>Enter your zip code</label>
-			<input type="text" class="form-control" placeholder="xxxxxx" name='zip' pattern="(\d{5}([\-]\d{4})?)" data-bind="value: zip">
-			<select class="form-control" id="zip">
+			<input type="text" class="form-control" placeholder="xxxxxx" name='zip' pattern="(\d{5}([\-]\d{4})?)" id="zip">
+			<select class="form-control">
 				<option>Delivery</option>
 				<option>Pickup</option>
 			</select>
