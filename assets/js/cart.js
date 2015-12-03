@@ -11,10 +11,14 @@ function SeatReservation(initialMeal) {
     self.addTax = ko.computed(function() {
       var price = self.meal().price;
       var tax = ( price * .0825 ) + price;
-      return price ? "$" + price.toFixed(2) : "None";
-    })
+      return tax ? "$" + price.toFixed(2) : "None";
+    });
 
-    var zip = document.getElementById('zip');
+    self.getTotal = ko.computed(function() {
+      var price = self.meal().price;
+      var tax = ( price * .0825 ) + price;
+      var total = tax + price;
+    });
 }
 
 // Overall viewmodel for this screen, along with initial state
@@ -79,6 +83,22 @@ function ReservationsViewModel() {
          total += self.seats()[i].meal().price;
         }
        return total;
+    });
+    self.addTax = ko.computed(function() {
+      var total = 0;
+      for (var i = 0; i < self.seats().length; i++) {
+        total += self.seats()[i].meal().price;
+       }
+      var tax = ( total * .0825 ) + total;
+      return tax ? "$" + tax.toFixed(2) : "None";
+    });
+    self.addDelivery = ko.computed(function() {
+      var total = 0;
+      for (var i = 0; i < self.seats().length; i++) {
+        total += self.seats()[i].meal().price;
+       }
+      var tax = ( total * .0825 ) + total + 4;
+      return tax ? "$" + tax.toFixed(2) : "None";
     });
 
     // Operations

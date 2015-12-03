@@ -33,7 +33,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 	<div class="search_container">
 		<form class="form-inline" action="restaurants.html">
 			<label>Enter your zip code</label>
-			<input type="text" class="form-control" placeholder="xxxxxx" name='zip' pattern="(\d{5}?)" data-bind="value: zip">
+			<input type="text" class="form-control" placeholder="xxxxxx" name='zip' pattern="(\d{5}([\-]\d{4})?)" data-bind="value: zip">
 			<select class="form-control" id="zip">
 				<option>Delivery</option>
 				<option>Pickup</option>

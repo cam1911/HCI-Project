@@ -85,3 +85,6 @@ function ReviewsViewModel() {
 }
 
 ko.applyBindings(ReviewsViewModel());
+
+var zipcode = getElementById('zip').value;
+console.log(zipcode);

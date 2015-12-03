@@ -5,7 +5,7 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/order.css"
+  <link rel="stylesheet" href="../assets/css/order.css">
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -172,9 +172,6 @@
           <div class="row">
             <h1>Order Summary</h1>
           </div>
-          <div class="row">
-            <h2 id="order-summary-restaurant">Chik-Fil-A</h2>
-          </div>
           <div class="item-list row">
             <div class="col-sm-5 col-sm-offset-3">
               <ul>
@@ -196,7 +193,7 @@
               <ul>
                 <li><h2>SubTotal</h2></li>
                 <li><h2>Tax</h2></li>
-                <li><h2 id="total">Total</h2></li>
+                <li><h2 id="total" data-bind="text: getTotal">Total</h2></li>
               </ul>
             </div>
             <div class="price-list col-sm-6">

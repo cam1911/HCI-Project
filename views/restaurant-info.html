@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../assets/css/genres.css">
 	<link rel="stylesheet" href="../assets/less/restaurant-info.less">
 	<link rel="stylesheet" href="../assets/css/cart.css">
+	<link rel="stylesheet" href="../assets/css/order.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -116,7 +117,7 @@
 				<tbody data-bind="foreach: seats">
 					<tr>
 						<td>
-							<select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select>
+							<select class="form-control" data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select>
 						</td>
 						<td id="final-price" data-bind="text: formattedPrice"></td>
 						<td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
@@ -134,4 +135,185 @@
 			<button class="btn browse" type="submit">Checkout</button>
 		</form>
 	</div>
+
+	<div class="order-containter row">
+    <h1>Checkout</h1>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Delivery Information</h1>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>Address</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>City</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="col-sm-3">
+                <span>State</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-sm-3">
+                <span>ZIP</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="notes-input row">
+            <span>Notes</span>
+            <input type="text" class="form-control">
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Payment Information</h1>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>Card Number</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>CVV</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="col-sm-3">
+                <span>Expiration (MM/YY)</span>
+              </div>
+              <div class="col-sm-9">
+                <input style="
+    margin-left: 15px;
+" type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>Billing Address</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>City</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>State</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="input-list col-sm-6">
+              <div class="col-sm-3">
+                <span>ZIP</span>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="box-container col-sm-6">
+          <div class="row">
+            <h1>Order Summary</h1>
+          </div>
+          <div class="item-list row">
+            <div class="col-sm-5 col-sm-offset-3">
+              <ul>
+                <li><span>Food</span></li>
+                <li><span>Delivery</span></li>
+              </ul>
+            </div>
+            <div class="price-list col-sm-4">
+              <ul>
+                <li><span data-bind="text: totalSurcharge().toFixed(2)"></span></li>
+                <li><span>$4.00</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row"></div>
+            <div class="seperator col-sm-12"></div>
+          <div class="row">
+            <div class="item-list col-sm-6">
+              <ul>
+                <li><h2>SubTotal</h2></li>
+                <li><h2>Tax</h2></li>
+                <li><h2 id="total">Total</h2></li>
+              </ul>
+            </div>
+            <div class="price-list col-sm-6">
+              <ul>
+                <li style="display"><h2 data-bind="text: totalSurcharge().toFixed(2)"></h2></li>
+                <li><h2 data-bind="text: addTax()"></h2></li>
+                <li><h2 data-bind="text: addDelivery()" id="total"></h2></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <form class="col-sm-12" action="thanks.html">
+              <button type="submit" class="btn btn-default">Place Order</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
