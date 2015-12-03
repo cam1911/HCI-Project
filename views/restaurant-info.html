@@ -134,12 +134,11 @@
 		</form>
 	</div>
 
-	<div class="row restaurants">
-		<h1>Checkout</h1>
-	</div>
-
-	<div class="order-containter row">
+	<div class="order-containter row" data-bind="if: seats().length > 0">
     <div class="container-fluid">
+			<div class="row restaurants">
+				<h1>Checkout</h1>
+			</div>
       <div class="row">
         <div class="col-sm-3"></div>
         <div class="box-container col-sm-6">
