@@ -77,9 +77,7 @@
 		<h1>Reviews</h1>
 	</div>
 	<div class="row restaurants">
-		<button class="btn" id="add-review">
-			Leave a review
-		</button>
+
 		<input type="text" name="name" id="review-name" placeholder="Write your name here...">
 		<input type="text" name="review" id="review-text" placeholder="Write your review here...">
 		<button class="btn" id="submit" data-bind="click: addReview">
@@ -91,7 +89,7 @@
 	</div>
 	<div class="row restaurants">
 		<ul data-bind="foreach: initiateReviews">
-		<li class="caption col-sm-4 reviews" >
+		<li class="caption col-sm-3 reviews" >
 			<img class="img-circle" src="../assets/images/asian.png">
 			<h4 data-bind="text: name"></h4>
 			<table class="review-table">
@@ -103,6 +101,11 @@
 			</table>
 		</li>
 				</ul>
+	</div>
+	<div class="row restaurants">
+		<button class="btn" id="add-review">
+			Leave a review
+		</button>
 	</div>
 	<div class="row restaurants">
 		<h2>Your Items (
