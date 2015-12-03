@@ -68,9 +68,6 @@
 					<p data-bind="text: description"></p>
 					<div class="price-info" data-bind="">
 						<span class="glyphicon glyphicon-usd" data-bind="text: price"></span>
-						<button class="btn browse pull-right">
-							<span class="glyphicon glyphicon-plus" id="color-white"></span> Add
-						</button>
 					</div>
 				</div>
 			</li>
@@ -93,18 +90,19 @@
 		</button>
 	</div>
 	<div class="row restaurants">
-		<div class="caption col-sm-4 reviews">
+		<ul data-bind="foreach: initiateReviews">
+		<li class="caption col-sm-4 reviews" >
 			<img class="img-circle" src="../assets/images/asian.png">
-			<h4>Review</h4>
+			<h4 data-bind="text: name"></h4>
 			<table class="review-table">
-				<tbody id="user-review" data-bind="foreach: initiateReviews">
+				<tbody id="user-review" >
 					<tr>
-						<td data-bind="text: name"></td>
 						<td data-bind="text: body"></td>
 					</tr>
 				</tbody>
 			</table>
-		</div>
+		</li>
+				</ul>
 	</div>
 	<div class="row restaurants">
 		<h2>Your Items (
