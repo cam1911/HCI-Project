@@ -89,7 +89,7 @@ function ReservationsViewModel() {
       for (var i = 0; i < self.seats().length; i++) {
         total += self.seats()[i].meal().price;
        }
-      var tax = ( total * .0825 ) + total;
+      var tax = ( total * .0825 );
       return tax ? "$" + tax.toFixed(2) : "None";
     });
     self.addDelivery = ko.computed(function() {
@@ -97,9 +97,20 @@ function ReservationsViewModel() {
       for (var i = 0; i < self.seats().length; i++) {
         total += self.seats()[i].meal().price;
        }
-      var tax = ( total * .0825 ) + total + 4;
-      return tax ? "$" + tax.toFixed(2) : "None";
+       //var tax = ( total * .0825 );
+      total = total + 4;
+      return total ? "$" + total.toFixed(2) : "None";
     });
+    self.endCost = ko.computed(function() {
+      var total = 0;
+      for (var i = 0; i < self.seats().length; i++) {
+        total += self.seats()[i].meal().price;
+       }
+      var tax = ( total * .0825 );
+      total = total + 4 + tax;
+      return total ? "$" + total.toFixed(2) : "None";
+    });
+
 
     // Operations
     self.addSeat = function() {

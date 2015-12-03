@@ -134,9 +134,11 @@
 		</form>
 	</div>
 
-	<div class="order-containter row">
-    <h1>Checkout</h1>
+	<div class="row restaurants">
+		<h1>Checkout</h1>
+	</div>
 
+	<div class="order-containter row">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3"></div>
@@ -299,9 +301,9 @@
             </div>
             <div class="price-list col-sm-6">
               <ul>
-                <li style="display"><h2 data-bind="text: totalSurcharge().toFixed(2)"></h2></li>
+                <li style="display"><h2 data-bind="text: addDelivery()"></h2></li>
                 <li><h2 data-bind="text: addTax()"></h2></li>
-                <li><h2 data-bind="text: addDelivery()" id="total"></h2></li>
+                <li><h2 data-bind="text: endCost()" id="total"></h2></li>
               </ul>
             </div>
           </div>
