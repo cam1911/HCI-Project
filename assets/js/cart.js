@@ -7,6 +7,8 @@ function SeatReservation(initialMeal) {
         var price = self.meal().price;
         return price ? "$" + price.toFixed(2) : "None";
     });
+
+    var zip = document.getElementById('zip');
 }
 
 // Overall viewmodel for this screen, along with initial state
