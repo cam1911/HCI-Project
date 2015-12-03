@@ -17,6 +17,7 @@ function RestaurantViewModel() {
 			foodType: 'Chicken',
 			imageSrc: '../assets/images/chikfila.png',
 			zip: '75080',
+			delivery: true,
 		},
 		{
 			name: 'Raising Canes',
@@ -27,6 +28,7 @@ function RestaurantViewModel() {
 			foodType: 'Chicken',
 			imageSrc: '../assets/images/raisingcanes.png',
 			zip: '75080',
+			delivery: true,
 		},
 		{
 			name: 'Panda Express',
@@ -37,6 +39,7 @@ function RestaurantViewModel() {
 			foodType: 'Asian',
 			imageSrc: '../assets/images/panda.png',
 			zip: '75080',
+			delivery: true,
 		},
 		{
 			name: 'Chilis',
@@ -67,6 +70,7 @@ function RestaurantViewModel() {
 			foodType: 'Mexican',
 			imageSrc: '../assets/images/tacocabana.png',
 			zip: '75090',
+			delivery: true,
 		},
 	];
 

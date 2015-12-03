@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../assets/css/cards.css">
 	<link rel="stylesheet" href="../assets/css/genres.css">
 	<link rel="stylesheet" href="../assets/less/restaurant-info.less">
+	<link rel="stylesheet" href="../assets/css/cart.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -104,5 +105,38 @@
 				</tbody>
 			</table>
 		</div>
+	</div>
+	<div class="row restaurants">
+		<h2>Your Items (
+			<span data-bind="text: seats().length"></span>)
+		</h2>
+		<form action="order.html">
+			<table style="margin-bottom: 10px;">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach: seats">
+					<tr>
+						<td>
+							<select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select>
+						</td>
+						<td data-bind="text: formattedPrice"></td>
+						<td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button class="btn browse" data-bind="click: addSeat, enable: seats().length < 5">Add Another Item</button>
+
+			<h3 data-bind="visible: totalSurcharge() > 0">
+				Total: $
+				<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+			</h3>
+
+			<button class="btn browse" type="submit">Checkout</button>
+		</form>
 	</div>
 </body>

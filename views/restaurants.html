@@ -44,7 +44,7 @@ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJUFwmYFAy_9nSZKD1eQfx
 
 	<div class="row restaurants">
 		<ul data-bind="foreach: restaurantsList">
-			<a class="col-sm-3" href="restaurant-info.html" data-bind="if: zip == zip"> <!-- TODO: Fix to work with user enter zip -->
+			<a class="col-sm-3" href="restaurant-info.html" data-bind="if: zip == 75080 && delivery == true"> <!-- TODO: Fix to work with user enter zip -->
 				<li class="thumbnail restaurant">
 					<img data-bind="attr: { src: imageSrc }">
 					<div class="caption">
