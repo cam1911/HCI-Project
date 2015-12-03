@@ -69,7 +69,7 @@ function ReservationsViewModel() {
 
     // Editable data
     self.seats = ko.observableArray([
-        new SeatReservation(self.availableMeals[0]),
+        //new SeatReservation(self.availableMeals[0]),
     ]);
 
     // Computed data

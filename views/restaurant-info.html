@@ -27,12 +27,6 @@
 						<img alt="Brand" src="../assets/images/logo.png">
 					</a>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<i class="glyphicon glyphicon-shopping-cart"></i>
-						<a href="cart.html">Shopping Cart</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</nav>
@@ -108,7 +102,7 @@
 		</button>
 	</div>
 	<div class="row restaurants">
-		<h2>Your Items (
+		<h2>Your Cart (
 			<span data-bind="text: seats().length"></span>)
 		</h2>
 		<form action="order.html">
@@ -130,7 +124,7 @@
 				</tbody>
 			</table>
 
-			<button class="btn browse" data-bind="click: addSeat, enable: seats().length < 5">Add Another Item</button>
+			<button class="btn browse" data-bind="click: addSeat, enable: seats().length < 5">Add Item</button>
 
 			<h3 data-bind="visible: totalSurcharge() > 0">
 				Total: $
