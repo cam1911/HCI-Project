@@ -20,25 +20,25 @@ function ReservationsViewModel() {
         {
           mealName: "Meal 1",
           price: 7.99,
-          description: 'The most popular meal. Its pretty good',
+          description: 'The most popular meal. Comes with fries and drink',
           imageSrc: '../assets/images/american.png',
         },
         {
           mealName: "Meal 2",
           price: 6.99,
-          description: 'A less popular meal',
+          description: 'The second most popular meal.',
           imageSrc: '../assets/images/deli.png',
         },
         {
           mealName: "Meal 3",
           price: 5.99,
-          description: 'Our worst meal ever',
+          description: 'The third most popular meals',
           imageSrc: '../assets/images/pizza.png',
         },
         {
           mealName: "Sandwich",
           price: 3.99,
-          description: 'A pretty damn good sandwich',
+          description: 'A pretty awesome sandwich',
           imageSrc: '../assets/images/deli.png',
         },
         {
